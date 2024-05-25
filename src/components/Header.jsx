@@ -39,6 +39,9 @@ const Header = (props) => {
                 <input type="text" name="name" placeholder="Enter name" />
                 <button type="submit">Submit</button>
             </form>
+
+            
+
         </div>
     );
 };
