@@ -38,9 +38,11 @@ const Hero = (props) => {
                 }
             </ul>
             <h1>{props.title}</h1>
-            <h2>Name: {item.name}</h2>
-            <h3>Age: {item.age}</h3>
-            <h3>City: {item.city}</h3>
+            <ul>
+                <li>Name: {item.name}</li>
+                <li>Age: {item.age}</li>
+                <li>City: {item.city}</li>
+            </ul>
         </div>
     );
 };
