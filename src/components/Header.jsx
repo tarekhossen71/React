@@ -6,8 +6,10 @@ const loginStatusButton = (status) => {
         return <button>Login</button>
     }
 }
+const sayHi = () => alert('Say hi to all')
 
 const Header = (props) => {
+    
     return (
         <div>
             <ul>
@@ -17,6 +19,12 @@ const Header = (props) => {
             </ul>
 
             <button onClick={props.btnClick}>Click</button>
+            {/* Responding to event */}
+            <button onClick={()=>{
+                alert('Say hi')
+            }}>Submit</button>
+
+            <button onClick={sayHi}>Click</button>
         </div>
     );
 };
