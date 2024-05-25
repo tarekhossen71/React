@@ -7,7 +7,7 @@ const loginStatusButton = (status) => {
     }
 }
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             <ul>
@@ -15,6 +15,8 @@ const Header = () => {
                 <li>Other</li>
                 <li>{loginStatusButton(false)}</li>
             </ul>
+
+            <button onClick={props.btnClick}>Click</button>
         </div>
     );
 };

@@ -10,9 +10,14 @@ const App = () => {
     age:23,
     city:'Dhaka'
   }
+
+  const buttonClick = ()=>{
+    alert('Hi There!');
+  }
+
   return (
     <div>
-      <Header />
+      <Header btnClick={buttonClick} />
       <Hero title="Pass data using props" item={item} />
       <ContactForm/>
       <Footer/>
