@@ -7,6 +7,13 @@ const loginStatusButton = (status) => {
     }
 }
 const sayHi = () => alert('Say hi to all')
+const PostFormData = (e) => {
+    e.preventDefault();
+
+
+    //Submited data
+    alert('Form Submited');
+}
 
 const Header = (props) => {
     
@@ -18,13 +25,20 @@ const Header = (props) => {
                 <li>{loginStatusButton(false)}</li>
             </ul>
 
-            <button onClick={props.btnClick}>Click</button>
+            {/* <button onClick={props.btnClick}>Click</button> */}
             {/* Responding to event */}
-            <button onClick={()=>{
+            {/* <button onClick={()=>{
                 alert('Say hi')
             }}>Submit</button>
 
-            <button onClick={sayHi}>Click</button>
+            <button onClick={sayHi}>Click</button> */}
+
+            {/* Form Submit */}
+
+            <form onSubmit={PostFormData}>
+                <input type="text" name="name" placeholder="Enter name" />
+                <button type="submit">Submit</button>
+            </form>
         </div>
     );
 };
