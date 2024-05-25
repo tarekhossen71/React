@@ -2,9 +2,9 @@ import React, { useRef } from 'react';
 
 const UseRef = () => {
 
-    // let myHeading = useRef();
+    let myHeading = useRef();
     // let myImg = useRef();
-    let firstName,lastName = useRef();
+    // let firstName,lastName = useRef();
     // let lastName = useRef();
 
     const change = () => {
@@ -15,9 +15,11 @@ const UseRef = () => {
         // myImg.current.setAttribute('width','500px');
         // myImg.current.setAttribute('height','300px');
         // change input 
-        let fName = firstName.value;
-        let lName = lastName.value;
-        alert(fName+' ' +lName);
+        // let fName = firstName.value;
+        // let lName = lastName.value;
+        // alert(fName+' ' +lName);
+        myHeading.current.classList.remove('text-success')
+        myHeading.current.classList.add('text-danger')
     }
 
     return (
@@ -28,9 +30,10 @@ const UseRef = () => {
              */}
 
              {/* <img ref={myImg} src="https://placehold.co/300x200" alt="" /> */}
-             <input type="text" ref={(a)=>firstName=a} name='fname' placeholder='Enter First Name' />
-             <input type="text" ref={(b)=>lastName=b} name='lname' placeholder='Enter Last Name' />
-            <button onClick={change}>Click</button>
+             {/* <input type="text" ref={(a)=>firstName=a} name='fname' placeholder='Enter First Name' />
+             <input type="text" ref={(b)=>lastName=b} name='lname' placeholder='Enter Last Name' /> */}
+             <h1 ref={myHeading} className='text-success fw-bold'>Lorem ipsum dolor sit amet.</h1>
+            <button onClick={change} className='btn btn-primary'>Click Here</button>
         </div>
     );
 };
