@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import ContactForm from "./components/contactForm";
 import Footer from './components/Footer';
 import UseRef from './components/UseRef';
+import Product from './components/Product';
 
 
 const App = () => {
@@ -23,7 +24,9 @@ const App = () => {
       <ContactForm/> */}
       {/* <Footer/> */}
 
-      <UseRef/>
+      {/* <UseRef/> */}
+
+      <Product/>
     </div>
   );
 };
