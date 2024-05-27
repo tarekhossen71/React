@@ -4,6 +4,7 @@ import ContactForm from "./components/contactForm";
 import Footer from './components/Footer';
 import UseRef from './components/UseRef';
 import Product from './components/Product';
+import UseState from './components/UseState';
 
 
 const App = () => {
@@ -26,7 +27,9 @@ const App = () => {
 
       {/* <UseRef/> */}
 
-      <Product/>
+      {/* <Product/> */}
+
+      <UseState/>
     </div>
   );
 };
