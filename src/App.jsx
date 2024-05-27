@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import UseRef from './components/UseRef';
 import Product from './components/Product';
 import UseState from './components/UseState';
+import TodoApp from './components/TodoApp';
 
 
 const App = () => {
@@ -29,7 +30,9 @@ const App = () => {
 
       {/* <Product/> */}
 
-      <UseState/>
+      {/* <UseState/> */}
+
+      <TodoApp/>
     </div>
   );
 };
