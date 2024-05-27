@@ -6,6 +6,7 @@ import UseRef from './components/UseRef';
 import Product from './components/Product';
 import UseState from './components/UseState';
 import TodoApp from './components/TodoApp';
+import NewToDo from './components/NewToDo';
 
 
 const App = () => {
@@ -32,7 +33,9 @@ const App = () => {
 
       {/* <UseState/> */}
 
-      <TodoApp/>
+      {/* <TodoApp/> */}
+
+      <NewToDo/>
     </div>
   );
 };
